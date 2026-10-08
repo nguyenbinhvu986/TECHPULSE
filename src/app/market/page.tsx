@@ -44,7 +44,12 @@ export default async function MarketPage() {
             />
             {coin.symbol}
           </div>
-          <div>{Number(coin.lastPrice).toFixed(2)}$</div>
+          <div>
+            {Number(coin.lastPrice).toLocaleString("en-US", {
+              maximumFractionDigits: 8,
+            })}
+            $
+          </div>
           <div
             className={
               Number(coin.priceChangePercent) >= 0

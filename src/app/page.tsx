@@ -48,7 +48,7 @@ export default async function HomePage() {
                 {post.body}
               </p>
               <div className="mt-4">
-                <BookmarkButton />
+                <BookmarkButton postId={post.id} />
               </div>
             </article>
           ))}

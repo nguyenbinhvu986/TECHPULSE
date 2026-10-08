@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BookmarkCount } from "../features/BookMarkButton";
 
 export default function Navbar() {
   return (
@@ -9,6 +10,7 @@ export default function Navbar() {
       <Link href="/">Trang chủ</Link>
       <Link href="/market">Crypto list</Link>
       <Link href="/search">Search posts</Link>
+      <BookmarkCount />
     </header>
   );
 }
